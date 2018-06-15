@@ -1,0 +1,87 @@
+<header> <!-- Top Header -->
+	<div id="contenedorTitulo" class="container" [@fade]="titleIn">
+
+	  <div class="row"> <!-- Contenedor Logo + Titulo -->
+	    <div class="col-xs-12 col-sm-2" id="contenedorLogo"> <!-- Logo -->
+	      <a href="/home"><img id="logo" alt="logo" src="../assets/img/general/SV_Logo_vector.svg"></a> 
+	    </div>
+	    <div id="home" class="col-xs-8">
+	      <h1><a href="/home">SwordVoice</a></h1> <!-- Titulo -->
+	    </div>
+	  </div>
+
+
+	</div>
+</header>
+
+
+    <div  class="btnMenu" >  <!-- Boton Menu Interactivo -->
+      <div id="contenedorBarsAndX" > <!-- Contenedor Barras Equis -->
+        <button id="barra" class="barsAndX" [ngClass]="status ? 'aparecer' : 'desaparecer'" type="button"   (click)="collapse()"   >
+         <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <button id="equis" class="barsAndX" [ngClass]="!status ? 'aparecer' : 'desaparecer'" type="button"   (click)="collapse()">
+          <i class="fa fa-times" style="color:black"></i>
+        </button>
+      </div>  
+      <div> <!-- Contenedor Bandera -->
+         <button (click)="newLanguage()">
+          <img class="flags" *ngIf="newLang === 'Español'" style="width:32px" alt="Español" src="../assets/img/icon/SPAIN.png">
+          <img class="flags" *ngIf="newLang === 'English'" style="width:32px" alt="English" src="../assets/img/icon/USA.png">
+         </button>
+      </div>
+    </div>
+
+
+
+  
+
+
+
+<nav id="verticalBar" class=" "> <!-- Nav Bar Interactivo -->
+      <div id="barItemsMovil" class="container" [@flyInOut]="in" >
+        <div class="row">
+          <div class="col-sm-12 col-md-10 centerVert">
+            <ul> <!-- Opciones Menu -->
+              <li>
+                <a  class="opcion"  routerLinkActive="opcionAct" routerLink="/home"> {{'MENU.HOME' | translate}} </a>  
+              </li>
+              <li>
+                <a  class="opcion"  routerLinkActive="opcionAct" routerLink="/about"> {{'MENU.ABOUT' | translate}} </a>  
+              </li>
+              <li>
+                <a  class="opcion"  routerLinkActive="opcionAct" routerLink="/services"> {{'MENU.SERVICES' | translate}} </a>  
+              </li> 
+              <li>
+                <a  class="opcion"  routerLinkActive="opcionAct" routerLink="/portfolio"> {{'MENU.BLOG' | translate}} </a>  
+              </li>           
+              <li>
+                <a  class="opcion"  routerLinkActive="opcionAct" routerLink="/portfolio"> {{'MENU.JOBS' | translate}} </a>  
+              </li>
+              <li>
+                <a  class="opcion"  routerLinkActive="opcionAct" routerLink="/fundation"> {{'MENU.ORG' | translate}} </a>  
+              </li>  
+              <li>
+                <a  class="opcion" routerLinkActive="opcionAct" routerLink="/contact"> {{'MENU.CONTACT' | translate}} </a>  
+              </li>
+            </ul> 
+
+          </div>
+          <!-- Contenedor de Redes Sociales -->
+          <div class="col-sm-12 col-md-2 " 
+            style=
+              " width: 100%;
+                position: absolute;
+                bottom: 5%;"> 
+            <ul style="overflow: hidden;">
+              <li style="float:left; margin-right:10%;" *ngFor="let items of redesSociales">
+                <a  href="{{items.ruta}}" target="_blank"><i class="{{items.icono}} socialMedia"></i></a>
+              </li>       
+            </ul>
+          
+          </div> <!-- Fin Nav bar Vetical -->
+
+
+        </div>
+       </div>       
+  </nav>

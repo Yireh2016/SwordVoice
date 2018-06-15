@@ -1,0 +1,150 @@
+<!-- NAVBAR y HEADER -->
+
+<app-navbar (showComponent)="showHome($event)" ></app-navbar>
+
+
+
+
+
+<main [@fade]="titleIn"  id="homepage" >
+
+	<!-- Hero Slide  -->
+	<section #slide>  <!-- slide es para medir el alto del elemento -->
+		<div  id="slide" >
+			 <app-slide></app-slide>
+			
+		</div>
+	</section>  
+	<!-- Inicio de la pagina -->
+	<div class="container"  >
+
+
+
+		<!-- Resumen de SwordVoice -->
+		<div id="resumenSw" #summary class="row" >
+		
+		<!-- Separador de Secciones <br><br>  <hr>  <br><br>-->
+		
+		<br><br>  <hr>  <br><br>
+
+			<section class="seccionResumen" [@flyFromBottom]="appearing">
+				<div id="contenedorResumen">
+					 <!-- Resumen About -->
+	  			  <div class="col-xs-12 col-sm-4 col-lg-4">
+							<article>
+								<h2 >{{'HOME.SUMMARY.US' | translate}}</h2>
+								<p>{{'HOME.SUMMARY.ABOUT' | translate}} </p>
+							</article>
+
+							<!-- boton leer mas -->
+						  <div class="botonNoDisplay col-xs-12 col-sm-4 col-lg-4">
+						    <button type="button" class="btn btn-danger leerMas"><a routerLink="/about">{{'READ.READMORE' | translate}}</a>
+						    </button>
+					      </div>
+	  			  </div>
+					 <!-- Resumen Contacto -->
+	  				<div class="col-xs-12 col-sm-4 col-lg-4">
+							<article >
+								<h2>{{'HOME.SUMMARY.LOVE' | translate}}</h2>
+								<p>{{'HOME.SUMMARY.CONTACT' | translate}}</p>
+							</article>
+
+						<!-- boton leer mas -->
+							<div class="botonNoDisplay col-xs-12 col-sm-4 col-lg-4">
+								<button type="button" class="btn btn-danger leerMas"><a routerLink="/contact">{{'READ.READMORE' | translate}}</a>
+								</button>
+							</div>
+	  				</div>
+
+	  				<!-- Resumen services -->
+	  				<div class="col-xs-12 col-sm-4 col-lg-4">
+							<article >
+								<h2>{{'HOME.SUMMARY.DO' | translate}}</h2>
+								<p>{{'HOME.SUMMARY.SERVICES' | translate}}</p>
+							</article>	
+
+							<!-- boton leer mas -->
+							<div class="botonNoDisplay col-xs-12 col-sm-4 col-lg-4">
+								<button type="button" class="btn btn-danger leerMas"><a routerLink="/services">{{'READ.READMORE' | translate}}</a>
+								</button>
+							</div>			
+	  				</div>	
+				</div>
+		<!-- Botones de enlaces para dispositivos anchos > 760px -->
+					<div id="cajaBotonesLM" class="botonDisplay" >
+						<div class="col-xs-12 col-sm-4 col-lg-4">
+							<button type="button" class="btn btn-danger leerMas"><a routerLink="/about">{{'READ.READMORE' | translate}}</a></button>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-lg-4">
+							<button type="button" class="btn btn-danger leerMas"><a routerLink="/contact">{{'READ.READMORE' | translate}}</a></button>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-lg-4">
+							<button type="button" class="btn btn-danger leerMas"><a routerLink="/services">{{'READ.READMORE' | translate}}</a></button>
+						</div>
+					</div>
+			</section >
+		</div>
+
+		<!-- Separador de Secciones <br><br>  <hr>  <br><br>-->
+
+		<br><br>  <hr>  <br><br>
+		
+		<!-- Seccion de tecnologias usadas  -->
+		<div id="tecnologias" #technologies class="row">
+
+			<section [@flyFromBottom]="appearing2">
+
+				<h2>{{'HOME.TECH.TITLE' | translate}}</h2>
+
+ 				<div *ngFor="let items of imagenes" class="contenedorIMG col-xs-6 col-sm-4 col-lg-3 ">
+ 					<div><!-- borre el card -->
+
+ 						<img src="{{items.src}}" alt="{{items.alt}}">
+						<span>{{items.alt}}</span>
+ 					</div>
+
+ 				</div>
+			</section>
+		</div>
+
+				<!-- Separador de Secciones <br><br>  <hr>  <br><br>-->
+		<br><br>  <hr>  <br><br>
+
+
+
+	</div>
+
+	<div id="soporte"  #support class="row">
+			<section [@flyFromBottom]="appearing3" ><!-- Soporte WorlWide VIDEO BACKGROUND -->
+			<video poster="../assets/img/home/posterEarth.png" autoplay loop>
+				<source src="../assets/video/earthHDShort.mp4">
+				<source src="../assets/video/earthHDShort.webm">
+				<source src="../assets/video/earthMDShort.ogv">
+				<!-- 
+				Archivos de video 
+				
+				 -->
+			</video>
+
+			<article>
+				<h2>{{'HOME.VIDEO.TITLE' | translate}}</h2>
+				<p>{{'HOME.VIDEO.BILINGUAL' | translate}}</p>
+			</article>
+			</section>
+						<!-- Separador de Secciones <br><br>  <hr>  <br><br>-->
+
+
+			</div>
+	
+
+</main>
+
+<br><br>  <hr>  <br><br>
+
+
+
+
+
+
+
+

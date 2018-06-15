@@ -1,0 +1,60 @@
+{
+
+	"MENU":
+	{
+	    "HOME": "Inicio",
+	    "ABOUT": "Quiénes Somos",
+	    "SERVICES": "Qué Ofrecemos",
+	    "ORG": "Ayuda Social!!!",
+	    "JOBS":"Algunos Trabajos",
+	    "CONTACT":"Contáctanos",
+	    "BLOG":"Blog"
+	},
+
+	"HOME":
+	{
+	    "TITLE1": "Diseño WEB Personalizado",
+	    "P11": "No limites más tu estilo,",
+	    "P12": "llevamos tu imagen WEB  ",
+	    "P12STRONG": "¡AL SIGUIENTE NIVEL!",
+	    "TITLE2": "Desarrollo WEB",
+	    "P21": "Usamos las mejores y más actuales tecnologías del mercado que te llevarán",
+	    "P22STRONG": "UN PASO AL FRENTE",
+	    "P32": "Nosotros cuidamos tu marca y tu haces tu negocio aún ",
+	    "P32STRONG":"MÁS GRANDE",
+	   	"P41":"Marketing de Redes Sociales",
+	    "P42":"Atendemos tu comunidad de seguidores para hacer tu marca",
+	    "VIDEO": {
+	    	"TITLE":"SwordVoice Mundial",
+	    	"BILINGUAL":"Ofrecemos un servicio de asistencia remota a nivel mundial con soporte Bilingue en Español e Inglés."
+	    },
+	    "SUMMARY":
+		{
+			"US":"Nosotros",
+			"ABOUT":"Somos un grupo de desarrolladores freelancer que decidimos trabajar en equipo y estamos dispuestos a ofrecerte nuestra experiencia, creatividad y capacidades a tu servicio. ",
+			"LOVE":"Amamos",
+			"CONTACT":"La Tecnologia, el buen codigo y a nuestros clientes XD. Creemos que la cercanía contigo resulará en una mejor y mas personalizada solución a tus necesidades. Queremos hacerte aún más grande.",
+			"DO":"Lo que Hacemos",
+			"SERVICES":"Desde Diseno WEB, Desarrollo WEB hasta Marketing Digital y Manejo de redes sociales y SEO. Usamos las más novedosas tecnologias para ayudarte en este mundo de la WEB 2.0."
+
+		},
+		"TECH":
+		{
+			"TITLE":"Tecnologías Top que Usamos"
+		}
+		
+
+	},
+	"FOOTER":
+	{
+		"SECCIONES":"Explore",
+		"CONTACTOS":" Contactos",
+		"DESIGN":" Diseñado por: Nosotros lo hicimos XD",
+		"ENLACE":"Contáctanos",
+		"DISCLAIMER":"SwordVoice.com 2018 Derechos Reservados"
+	},
+	"READ":
+	{
+		"READMORE":"Leer más"
+	}
+}

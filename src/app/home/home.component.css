@@ -1,0 +1,143 @@
+
+
+/*CLASES*/
+
+/* Botones de leer mas del area de Resumen*/
+.leerMas{ position: relative; bottom: 0; }
+
+/*Botones de leer mas Seccion de Resumen*/
+.botonDisplay{ display: block; }
+.botonNoDisplay{ display: none; }
+
+/*Seccion de Imagenes de Tecnologias Usadas*/
+.contenedorIMG { padding: 0;}
+.contenedorIMG  > div {/*imagen contendor*/
+    position: relative;
+    box-sizing: border-box;
+    margin: 5px 5px;
+    text-align: center;
+/*    border: 1px solid black;
+    border-radius: 10px;*/
+    padding: 10px;
+    height: 200px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.contenedorIMG  div img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+
+.contenedorIMG  div span {
+	font-family: "courier new", courier;
+	position: absolute;
+	bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.2em
+}
+
+
+/*IDs*/
+
+/*Componente de Slide Hero*/
+#slide{	height: 550px; margin:0; }
+
+/*Seccion de Resumen*/
+#resumenSw{
+	margin: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+	color: #000;
+}
+#resumenSw section h2 ,#tecnologias h2 { font-size: xx-large; font-weight: 200 }
+#resumenSw section p{ font-size: large; font-weight: 300 }
+#resumenSw  section div{ position: relative; padding: 5px /*transition: all 800ms ease*/ }
+#resumenSw article {     padding: 10px 15px;  }
+
+#cajaBotonesLM{
+	overflow: auto;
+    clear: left;
+}
+#cajaBotonesLM button , #resumenSw div button{
+	margin: 10px 0;	
+}
+#cajaBotonesLM a, #resumenSw div button a { color: inherit; }
+
+#tecnologias{
+	text-align: center;
+}
+#tecnologias h2 {
+	padding: 0;
+	padding-bottom: 20px;
+}
+
+/* Video de Fondo */
+
+#soporte{
+	height: 100vh;
+	overflow: hidden;	
+	margin: 0
+}
+#soporte section {
+		position: relative;
+		height: 100vh;
+}
+
+#soporte video{
+	z-index: -2;
+	min-width: 100%;
+	min-height: 100vh;
+	filter: brightness(200%);
+	position: absolute;	
+	top: 0;	
+	left: 50%;	
+	transform: translate(-50%,0);
+	
+}
+
+#soporte article {
+
+	background-color: rgba(0,0,0,0.66);
+	background-color: #000000a8;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;	
+	text-align: center;
+
+}
+
+#soporte h2{ font-size: xx-large; }
+#soporte p{ font-size: large; }
+
+
+
+
+@media  (max-width: 760px)  { /*dispositivos  medianos ancho*/
+	.botonDisplay{ display: none; }
+	.botonNoDisplay{ display: block; }
+
+}
+
+@media (max-width: 600px){
+	#resumenSw section div{
+		padding: 0
+	}
+}

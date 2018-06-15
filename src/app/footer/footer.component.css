@@ -1,0 +1,61 @@
+p{ 
+	margin: 0;
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+ }
+ul{
+	padding: 0;
+    margin: 0;
+}
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #6494a4;
+}
+
+h2{
+	padding: 0;
+	margin: 0
+}
+
+#pieDePagina{
+	background-color: #f1f1f1;	
+	font-size: 1em;
+}
+#pieDePagina section{
+	padding: 20px;
+}
+
+#pieDePagina aside { padding: 0; margin:0; }
+#pieDePagina aside h2, #complementInfo div h2 { 
+	margin: 10px 0 ;
+}
+#pieDePagina article{ padding: 0; }
+
+#pieDePagina aside {}
+
+#complementInfo div { color: #415d68; }
+
+
+#socialM li{ float: left; padding: 5px; margin: 0 10px;}
+#socialM li:after{ content: "";display: block; overflow: hidden; }
+
+/* Seccion Disclaimer*/
+#disclaimer p{ 
+	text-align: center; 
+	color: #415d68; 
+	font-size: 1em; 
+	font-weight: 200
+}
+
+#footerLogo img { width: 100px }
+#footerLogo{
+	text-align: center;		
+}
+
+@media (max-width: 780px){
+	.socialMedia{  font-size: 2em;}
+}
+

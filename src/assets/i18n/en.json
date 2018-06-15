@@ -1,0 +1,64 @@
+{
+
+	"MENU":
+	{
+	    "HOME": "Sweet Home",
+	    "ABOUT": "About Us",
+	    "SERVICES": "What we do?",	    
+	    "ORG": "Helping Others!!!",
+	    "JOBS":"A few jobs...",
+	    "CONTACT":"Contact Us",
+	    "BLOG":"Blog"
+
+	},
+
+	"HOME":
+	{
+	    "TITLE1": "Custom WEB Design",
+	    "P11": "Do not limit your style,",
+	    "P12": "we can take your WEB image to the",
+	    "P12STRONG": "NEXT LEVEL",
+	    "TITLE2": "WEB Development",
+	    "P21": "We use the best market technologies to push you",
+	    "P22STRONG": "ONE STEP FORWARD",
+	    "P32": "We take care of your brand and you worry about making your bussiness even",
+	    "P32STRONG":"BIGGER",
+	    "P41":"Social Media Marketing",
+	    "P42":"We take care of your community of followers to make your brand",
+	    "VIDEO": {
+	    	"TITLE":"SwordVoice Worldwide",
+	    	"BILINGUAL":"We offer remote Worldwide support with our Bilingual Asistance in English and Spanish."
+	    },
+
+		"SUMMARY":
+		{
+			"US":"We",
+			"ABOUT":"We are a freelancer developers group working together as a team to offer you our experiece, creativity and capabilities to your service.",
+			"LOVE":"Love",
+			"CONTACT":"For technology, good coding practices and our customers XD. We belive that being in permanent contact with you will help improve your final solution making your bussiness .",
+			"DO":"What We Do",
+			"SERVICES":"From Custom Web Design and Development to Digital Marketing, Social Media Marketing and SEO. We use top tecnologies to help you on this WEB 2.0 world."
+		},
+		"TECH":
+		{
+			"TITLE":"Top Technologies that we use"
+		}
+
+
+	},
+
+
+	"FOOTER":
+	{
+		"SECCIONES":"Explore",
+		"CONTACTOS":"Contacts",
+		"DESIGN":"Design By: We did It XD,",
+		"ENLACE":"Contact Us",
+		"DISCLAIMER":"SwordVoice.com 2018 All rights reserved"
+	},
+	"READ":
+	{
+		"READMORE":"Read More"
+	}
+
+}

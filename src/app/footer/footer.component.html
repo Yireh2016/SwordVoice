@@ -1,0 +1,44 @@
+<footer id="pieDePagina">
+	<div class="container">
+		<section class="row">
+			<!-- Enlaces de navegacion del footer -->
+			<aside class="col-xs-12 col-sm-4">
+				<h2>{{'FOOTER.SECCIONES' | translate}}</h2>
+				<ul>
+					<li><a routerLink="/home">{{'MENU.HOME' | translate}}</a></li>
+					<li><a routerLink="/about">{{'MENU.ABOUT' | translate}}</a></li>
+					<li><a routerLink="/services">{{'MENU.SERVICES' | translate}}</a></li>
+					<li><a routerLink="/blog">{{'MENU.BLOG' | translate}}</a></li>
+					<li><a routerLink="/portfolio">{{'MENU.JOBS' | translate}}</a></li>
+					<li><a routerLink="/fundation">{{'MENU.ORG' | translate}}</a></li>
+					<li><a routerLink="/contact">{{'MENU.CONTACT' | translate}}</a></li>
+				</ul>
+			</aside>
+
+			<!-- informacion complementaria -->
+			<article id="complementInfo" class="col-xs-12 col-sm-4">
+				<div>
+					<h2>{{'FOOTER.CONTACTOS' | translate}}</h2>
+					<p><b>Skype:</b> SwordVoice Official</p>
+					<p><b>Email:</b> SwordVoiceOficial@gmail.com</p>
+					<h2>Social Media</h2>
+				    <ul id="socialM">
+		              <li  *ngFor="let items of redesSociales">
+		                <a  href="{{items.ruta}}" target="_blank"><i class="{{items.icono}} socialMedia"></i></a>
+		              </li>       
+	           		 </ul>	
+				</div>
+			</article>
+			<section id="footerLogo" class="col-xs-12 col-sm-4">
+				<img alt="logo" src="../assets/img/general/SV_Logo_vector.svg">
+			</section>
+		</section>
+
+		<section id="disclaimer" class="row">
+			<p>{{'FOOTER.DESIGN' | translate}} <a href="/contact">{{'FOOTER.ENLACE' | translate}}</a></p>
+			<p>{{'FOOTER.DISCLAIMER' | translate}}</p>
+	</section>
+	
+	</div>
+		
+</footer>
