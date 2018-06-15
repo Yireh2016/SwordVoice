@@ -102,6 +102,10 @@ header{
     font-family: Raleway,sans-serif;		color: white !important
 }
 
+.visible{visibility: visible;}
+
+.invisible{visibility: hidden;}
+
 
 
 

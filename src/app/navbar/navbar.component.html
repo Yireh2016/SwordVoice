@@ -38,7 +38,7 @@
 
 
 
-<nav id="verticalBar" class=" "> <!-- Nav Bar Interactivo -->
+<nav id="verticalBar" [ngClass]="in === 'out' ? 'invisible' : 'visible'"> <!-- Nav Bar Interactivo -->
       <div id="barItemsMovil" class="container" [@flyInOut]="in" >
         <div class="row">
           <div class="col-sm-12 col-md-10 centerVert">
