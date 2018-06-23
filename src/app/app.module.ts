@@ -21,6 +21,8 @@ import { OrgComponent } from './org/org.component';
 import { BlogComponent } from './blog/blog.component';
 import { SlideComponent } from './home/slide/slide.component';
 import { FooterComponent } from './footer/footer.component';
+import { BarxComponent } from './navbar/barx/barx.component';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
@@ -35,6 +37,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SlideComponent,
     AboutComponent,
     ServicesComponent,
+    BarxComponent,
     PortfolioComponent,
     ContactComponent,
     OrgComponent,

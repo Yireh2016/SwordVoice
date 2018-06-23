@@ -9,28 +9,26 @@
 	      <h1><a href="/home">SwordVoice</a></h1> <!-- Titulo -->
 	    </div>
 	  </div>
-
-
 	</div>
 </header>
 
+ 
 
-    <div  class="btnMenu" >  <!-- Boton Menu Interactivo -->
-      <div id="contenedorBarsAndX" > <!-- Contenedor Barras Equis -->
-        <button id="barra" class="barsAndX" [ngClass]="status ? 'aparecer' : 'desaparecer'" type="button"   (click)="collapse()"   >
-         <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-        <button id="equis" class="barsAndX" [ngClass]="!status ? 'aparecer' : 'desaparecer'" type="button"   (click)="collapse()">
-          <i class="fa fa-times" style="color:black"></i>
-        </button>
-      </div>  
-      <div> <!-- Contenedor Bandera -->
+      <!-- Boton Menu Interactivo -->
+      
+        <app-barx (click)="collapse()" [unable]="unable"></app-barx>
+
+
+
+     
+
+      <div id="contenedorBandera"> <!-- Contenedor Bandera -->
          <button (click)="newLanguage()">
           <img class="flags" *ngIf="newLang === 'Español'" style="width:32px" alt="Español" src="../assets/img/icon/SPAIN.png">
           <img class="flags" *ngIf="newLang === 'English'" style="width:32px" alt="English" src="../assets/img/icon/USA.png">
          </button>
       </div>
-    </div>
+  
 
 
 
@@ -38,7 +36,7 @@
 
 
 
-<nav id="verticalBar" [ngClass]="in === 'out' ? 'invisible' : 'visible'"> <!-- Nav Bar Interactivo -->
+<nav id="verticalBar" > <!-- Nav Bar Interactivo -->
       <div id="barItemsMovil" class="container" [@flyInOut]="in" >
         <div class="row">
           <div class="col-sm-12 col-md-10 centerVert">

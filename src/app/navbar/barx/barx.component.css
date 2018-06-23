@@ -1,0 +1,69 @@
+/*Estilos generales del trazado*/
+#top, #bottom, #izq, #der{
+  fill:none;stroke:#000000;
+  stroke-width:4;stroke-linecap:round;
+  stroke-opacity:1;
+}
+
+/* Valores iniciales del size del trazado o stroke y la separacion medida desde el inicio del trazado*/
+#top, #bottom{
+  stroke-dasharray:170;/* medida del stroke*/
+  stroke-dashoffset:140;/**posicion inicial del offset  BARRA*/
+}
+
+/*Animaciones de los trazos superior e inferior*/
+@keyframes dashtopF{/*A Equis*/
+  from{ stroke-dashoffset:140 }
+  to{ stroke-dashoffset:-112; }
+}
+@keyframes dashtopR{/*A Barra*/
+  from{ stroke-dashoffset:-112; }
+  to{ stroke-dashoffset:140; }
+}
+
+
+
+
+
+/*trazados centrales izq y der*/
+
+#izq{
+  stroke-dasharray:48 ;/* medida del stroke*/
+  stroke-dashoffset:33;/**posicion inicial del offset  BARRA*/
+}
+#der{
+  stroke-dasharray:48 ;/* medida del stroke*/
+  stroke-dashoffset:36;/**posicion inicial del offset  BARRA*/
+}
+
+/*Animaciones de los trazos izquierda  y derecha*/
+
+@keyframes dashcenterF{/*A punto*/
+  from{ stroke-dashoffset:33 }
+  to{ stroke-dashoffset:47.71; }
+}
+@keyframes dashcenterR{/*A barra*/
+  from{ stroke-dashoffset:47.71; }
+  to{ stroke-dashoffset:33; }
+}
+
+
+@keyframes dashcenterFder{/*A punto*/
+  from{ stroke-dashoffset:36 }
+  to{ stroke-dashoffset:47.71; }
+}
+@keyframes dashcenterRder{/*A barra*/
+  from{ stroke-dashoffset:47.71; }
+  to{ stroke-dashoffset:36; }
+}
+
+
+
+#vector{/*escala y posiciona la animacion*/
+ width:65px; height:65px;
+ z-index: 200;
+ position: fixed;
+ top: 0;
+ right: 5%;
+ transform: translateX(20px);
+}

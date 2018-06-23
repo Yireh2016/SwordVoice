@@ -32,7 +32,7 @@ import { TranslateService } from '@ngx-translate/core';
 
     transition('disappear => appear', [//transicion de desaparecer a aparecer
       style({transform: 'translateY(100%)',opacity:'0'}),//from style
-      animate("1s ease",keyframes([ //transitions styles
+      animate("0.4s ease",keyframes([ //transitions styles
         style(({opacity:'0',transform: 'translateY(80%)'})),
         style(({opacity:'0',transform: 'translateY(60%)'})),
         style(({opacity:'0',transform: 'translateY(40%)'})),

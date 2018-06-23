@@ -1,7 +1,105 @@
 <app-navbar (showComponent)="showServices($event)" ></app-navbar>
 
 
-<div [@fade]="titleIn" class="container"  >
-	<p>services COMPONENT</p>
+
+<main [@fade]="titleIn">
+
+<!-- Hero para PC -->
+
+
+	<div id="hero">
+		<div id="webDevelopment" class="heroSlide">
+			<h2>Web Development</h2>
+			<button title="service" (click)="flyfromLeft='on' " type="button"><span></span></button>
+		</div>
+		<div id="webDesign" class="heroSlide">
+			<h2>Web Design</h2>
+			<button title="service" (click)="flyfromBottom='on' " type="button"><span></span></button>
+		</div>
+		<div id="internetMarketing" class="heroSlide">
+			<h2>Social Media & Internet Marketing</h2>
+			<button title="service" (click)="flyfromRight='on' " type="button"><span></span></button>
+		</div>
+		
+	</div>
+
+<!-- Hero para Mobile -->
+	<div id="heroSmall" #contenedorSelector>
+
+
+		
+
+
+
+			<div [ngClass]="aparecer ? 'drag' : '' ">
+				<button id="selector"  #selector
+				 [style.top]="selectorY"
+				 [style.left]="selectorX"
+				 [style.transition]="selectorTransition" 
+				 (touchstart)="dragStart($event)" 
+				 (touchmove)="dragStill($event)" 
+				 (touchend)="dragEnd($event)" 
+ 				 type="button">
+				 		<span></span>
+				 </button>
+
+			<section [style.display]="manitaView" id="manitaAnim" class="shapeshifter play"></section>
+
+
+
+
+
+
+								
+
+				<p id="webTituloDesign" 
+				[style.transform]="webTituloDesignScale"
+				[style.left]="webTituloDesignLeft"
+				[ngClass]="aparecer ? 'visible' : 'invisible' "
+				#webTituloDesign >Web Desing</p>
+
+				<p id="webTituloDev" 
+				[style.transform]="webTituloDevScale" 
+				[ngClass]="aparecer ? 'visible' : 'invisible' "
+				#webTituloDev >Web Development</p>
+
+				<p id="webTituloMarket"
+				[style.top]="webTituloMarketTop" 
+				[style.transform]="webTituloMarketScale" 
+				[ngClass]="aparecer ? 'visible' : 'invisible' "
+				#webTituloMarket > Social Media & Internet Marketing</p>
+
+
+
+			</div>
+	</div>
+
+<!--  content -->
+	<div id="webDesView" [@flyBottom]='flyfromBottom'>
+
+		<button (click)="back()" type="button">back</button>
+		
+	</div>
+
+	<div id="webDevView" [@flyLeft]='flyfromLeft'>
+
+		<button (click)="back()" type="button">back</button>
+		
+	</div>
+
+	<div id="webMarkView" [@flyRight]='flyfromRight'>
+
+		<button (click)="back()" type="button">back</button>
+		
+	</div>
+
+
+
+
+
+    
+
 	
-</div>
+
+	
+</main>

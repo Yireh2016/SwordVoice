@@ -15,22 +15,22 @@ const EXPOSICION=8000;
 
    trigger('RightArrow', [
     transition(':enter',[
-      style({transform:'translateX(80%) scale(1)'}),
+      style({transform:'translateX(30%) scale(1)'}),
       animate('.2s')
     ]),
     transition(':leave',[
-      animate('.2s', style({transform:'translateX(80%) scale(0)'}))
+      animate('.2s', style({transform:'translateX(30%) scale(0)'}))
     ])
            
   ]),
 
    trigger('LeftArrow', [
     transition(':enter',[
-      style({transform:'translateX(-80%) scale(1)'}),
+      style({transform:'translateX(-30%) scale(1)'}),
       animate('.2s' )
     ]),
     transition(':leave',[
-      animate('.2s', style({transform:'translateX(-80%) scale(0)'}))
+      animate('.2s', style({transform:'translateX(-30%) scale(0)'}))
     ])
            
   ]),
@@ -49,21 +49,6 @@ const EXPOSICION=8000;
       ])
     ]),
 
-
-
-  
-   /*trigger('fade', [
-    state('in',  style({opacity:  '1'})),
-    state('out', style({ opacity: '0'})),
-      transition('out => in',[
-        animate(
-          '500ms ease',
-          )
-        ]),
-      transition('in => out', [
-        animate( '500ms ease' ) 
-        ])
-    ])*/
   ]
 
 })

@@ -1,4 +1,9 @@
-import {Component} from '@angular/core';
+import {  Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { filter } from 'rxjs/operators'
+import { Router, NavigationEnd } from '@angular/router'
+
+
 
 @Component({
   selector: 'app-root',
@@ -12,6 +17,39 @@ import {Component} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy{
+/*
+
+##########################
+##########################
+##########################
+Codigo para que luego del enrutamiento, la patalla suba al inicio
+
+##########################
+##########################
+##########################
+##########################
+
+*/
+subscription: Subscription;
+
+constructor(private router: Router){
+
+}
+
+ngOnInit(){
+ this.subscription = this.router.events
+   .pipe(
+     filter(event => event instanceof NavigationEnd)
+     )
+   .subscribe(() => window.scrollTo(0,0));
+
+}
+
+
+ngOnDestroy(){
+  this.subscription.unsubscribe();
+}
+
 
 }

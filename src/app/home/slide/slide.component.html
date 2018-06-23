@@ -1,87 +1,91 @@
 
 
 
+<div (touchstart)="cancelAnimation=true; mouseOvered='in'" (pointerleave)="detectPointer()">
+	
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active">
-      <picture>
-      	<source media="(min-width: 451px)" srcset="../../../assets/img/home/creative760.jpg">
-      	<source media="(min-width:768px)" srcset="../../../assets/img/home/creative1280.jpg">
-      	<img  class="imagen" src="../../../assets/img/home/creative450.jpg" alt="Web Design">
-      </picture>
-      <div class="textoCarrusel">
-				<article class="row">
-					<div  class= "contenedorTexto">
-						<h2><strong>SwordVoice</strong> {{'HOME.TITLE1' | translate}}</h2>
-						<p>{{'HOME.P11' | translate}} {{'HOME.P12' | translate}} <strong>{{'HOME.P12STRONG' | translate}}</strong> </p>		
-					</div>	
-				</article>
-				<button class="boton-slide">{{'READ.READMORE' | translate}}</button>	 
-	  </div>
-    </div>
-    <div class="item">
-      <picture>
-      	<source media="(min-width:768px)" srcset="../../../assets/img/home/binary1280.jpg">
-      	<source media="(min-width: 451px)" srcset="../../../assets/img/home/binary760.jpg" >
-      	<img  class="imagen" src="../../../assets/img/home/binary450.jpg" alt="Web Development">
-      </picture>
-      <div class="textoCarrusel">
-				<article>
-					<div  class= "contenedorTexto" >
-						<h2><strong>SwordVoice</strong> {{'HOME.TITLE2' | translate}}</h2>
-						<p>{{'HOME.P21' | translate}} <strong>{{'HOME.P22STRONG' | translate}}</strong> </p>
-					</div>
-				</article>
-				<button class="boton-slide">{{'READ.READMORE' | translate}}</button>
-	  </div>
-    </div>
-    <div class="item">
-      <picture>
-      	<source media="(min-width:768px)" srcset="../../../assets/img/home/SEO1280.jpg" >
-      	<img class="imagen" src="../../../assets/img/home/SEO760.jpg" alt="Digital Marketing">
-      </picture>
-            <div class="textoCarrusel">
-				<article>
-					<div  class= "contenedorTexto" >
-						<h2><strong>SwordVoice</strong> Internet Marketing</h2>
-						<p>{{'HOME.P32' | translate}} <strong>{{'HOME.P32STRONG' | translate}}</strong> </p>
-					</div>
-				</article>
-				<button class="boton-slide">{{'READ.READMORE' | translate}}</button>
-	  		</div>
-    </div>
-    <div class="item">
-      <picture>
-      	<source media="(min-width:768px)" srcset="../../../assets/img/home/socialMedia1280.jpg" alt="Social Media">
-       	<img class="imagen" src="../../../assets/img/home/socialMedia760.jpg" alt="Social Media">
-      </picture>
-      <div class="textoCarrusel ">
-			 	<article>
-					<div  class= "contenedorTexto " >
-						<h2><strong>SwordVoice</strong> {{'HOME.P41' | translate}}</h2>
-						<p>{{'HOME.P42' | translate}} <strong>COOL</strong> </p>
-					</div>
-				</article>
-				<button class="boton-slide">{{'READ.READMORE' | translate}}</button>
-	  </div>
+	<div id="carouselExampleIndicators" (mouseenter)="mouseOvered='in'"  class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <picture>
+	      	<source media="(max-width: 451px)" srcset="../../../assets/img/home/creative450.jpg">
+	      	<source media="(max-width:768px)" srcset="../../../assets/img/home/creative760.jpg">
+	      	<img  class="imagen" src="../../../assets/img/home/creative1280.jpg" alt="Web Design">
+	      </picture>
+	      <div class="textoCarrusel">
+					<article class="row">
+						<div  class= "contenedorTexto">
+							<h2><strong>SwordVoice</strong> {{'HOME.TITLE1' | translate}}</h2>
+							<p>{{'HOME.P11' | translate}} {{'HOME.P12' | translate}} <strong>{{'HOME.P12STRONG' | translate}}</strong> </p>		
+						</div>	
+					</article>
+					<button class="boton-slide">{{'READ.READMORE' | translate}}</button>	 
+		  </div>
+	    </div>
+	    <div class="item">
+	      <picture>
+	      	<source media="(max-width:768px)" srcset="../../../assets/img/home/binary760.jpg">
+	      	<source media="(max-width: 451px)" srcset="../../../assets/img/home/binary450.jpg" >
+	      	<img  class="imagen" src="../../../assets/img/home/binary1280.jpg" alt="Web Development">
+	      </picture>
+	      <div class="textoCarrusel">
+					<article>
+						<div  class= "contenedorTexto" >
+							<h2><strong>SwordVoice</strong> {{'HOME.TITLE2' | translate}}</h2>
+							<p>{{'HOME.P21' | translate}} <strong>{{'HOME.P22STRONG' | translate}}</strong> </p>
+						</div>
+					</article>
+					<button class="boton-slide">{{'READ.READMORE' | translate}}</button>
+		  </div>
+	    </div>
+	    <div class="item">
+	      <picture>
+	      	<source media="(max-width:768px)" srcset="../../../assets/img/home/SEO760.jpg" >
+	      	<img class="imagen" src="../../../assets/img/home/SEO1280.jpg" alt="Digital Marketing">
+	      </picture>
+	            <div class="textoCarrusel">
+					<article>
+						<div  class= "contenedorTexto" >
+							<h2><strong>SwordVoice</strong> Internet Marketing</h2>
+							<p>{{'HOME.P32' | translate}} <strong>{{'HOME.P32STRONG' | translate}}</strong> </p>
+						</div>
+					</article>
+					<button class="boton-slide">{{'READ.READMORE' | translate}}</button>
+		  		</div>
+	    </div>
+	    <div class="item">
+	      <picture>
+	      	<source media="(max-width:768px)" srcset="../../../assets/img/home/socialMedia760.jpg" alt="Social Media">
+	       	<img class="imagen" src="../../../assets/img/home/socialMedia1280.jpg" alt="Social Media">
+	      </picture>
+	      <div class="textoCarrusel ">
+				 	<article>
+						<div  class= "contenedorTexto " >
+							<h2><strong>SwordVoice</strong> {{'HOME.P41' | translate}}</h2>
+							<p>{{'HOME.P42' | translate}} <strong>COOL</strong> </p>
+						</div>
+					</article>
+					<button class="boton-slide">{{'READ.READMORE' | translate}}</button>
+		  </div>
 
-    </div>
-  </div>
-  <a class="left carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" ></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" ></span>
-    <span class="sr-only">Next</span>
-  </a>
+	    </div>
+	  </div>
+	  <a class="left carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev" [@LeftArrow] *ngIf="mouseOvered==='in'">
+	    <span class="glyphicon glyphicon-chevron-left" ></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carouselExampleIndicators" role="button" data-slide="next" *ngIf="mouseOvered==='in'" [@RightArrow]>
+	    <span class="glyphicon glyphicon-chevron-right" ></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
 </div>
 
 <!--

@@ -1,7 +1,7 @@
 import { Component, OnInit , HostListener , Output ,
           AfterViewInit , AfterViewChecked , EventEmitter } from '@angular/core';
 import { Router  } from '@angular/router';
-import {  trigger,  state,  style,  animate,  transition } from '@angular/animations';
+import {  trigger,  state,  style,  animate,  transition , keyframes } from '@angular/animations';
 import { TranslateService } from '@ngx-translate/core';
 
  
@@ -12,16 +12,38 @@ const WRAPPER_SIZE=5000;
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
   animations: [
-  trigger('flyInOut', [
-    state('out', style({transform: 'translateX(100%)'})),
-    transition('void => *', [
-      style({transform: 'translateX(-100%)'}),
-      animate(100)
-    ]),
-    transition('* => void', [
-      animate(100, style({transform: 'translateX(100%)'}))
-    ])
-  ]),
+  
+trigger('flyInOut',[
+      state('in', style({transform:'translateX(0)'})),
+      transition('out => in',[
+
+
+        animate('1000ms linear', 
+         keyframes([
+           style({transform:'translateX(100%)',offset:0}),
+           style({transform:'translateX(80%)',offset:0.2}),
+           style({transform:'translateX(60%)',offset:0.4}),
+           style({transform:'translateX(40%)',offset:0.6}),
+           style({transform:'translateX(20%)',offset:0.8}), 
+           style({transform:'translateX(0)',offset:1}) 
+
+           ]))//style({transform:'translateX(100%)'})
+      ]),
+     state('out', style({transform:'translateX(100%)'})),
+      transition('in => out',[
+        animate('1000ms linear', 
+          keyframes([
+           style({transform:'translateX(0)',offset:0}),
+           style({transform:'translateX(20%)',offset:0.2}),
+           style({transform:'translateX(40%)',offset:0.4}),
+           style({transform:'translateX(60%)',offset:0.6}),
+           style({transform:'translateX(80%)',offset:0.8}), 
+           style({transform:'translateX(100%)',offset:1}) 
+
+           ]))
+      ]),
+     ])
+  ,
    trigger('fade', [
     state('in', style({opacity: '1',display: 'block'})),
     state('out', style({ opacity: '0',display:'none'})),
@@ -34,7 +56,7 @@ const WRAPPER_SIZE=5000;
         animate( '500ms ease' ) 
         ])
     ]),
-]
+  ]
    
 })
 export class NavbarComponent implements OnInit  , AfterViewChecked {
@@ -43,7 +65,6 @@ export class NavbarComponent implements OnInit  , AfterViewChecked {
  titleIn="in";
  routeIndex=0;
  newLang='Español';
- status= true;
  @Output() showComponent = new EventEmitter<string>();
  
      redesSociales=[
@@ -54,7 +75,7 @@ export class NavbarComponent implements OnInit  , AfterViewChecked {
     ]
 
   movil=false;//por defecto se asume que el dispositivo es PC
-  isCollapsed=true;
+  
 
 
 
@@ -129,24 +150,23 @@ export class NavbarComponent implements OnInit  , AfterViewChecked {
       this.movil=false 
     }
   }*/
-
+  unable=false;
   collapse(){
 
-    this.status=!this.status;
+    if(this.unable){
+      return
+    }
 
+    this.unable=true;//deshabilita el colapse 
+    let timer2 = setTimeout(() => this.unable=false,1300);
     this.in = this.in === 'in' ? 'out' : 'in';//menu
       
 
-    if (this.isCollapsed) {//X para ie11 
-      this.isCollapsed=!this.isCollapsed
-    }else{
-      setTimeout( () => this.isCollapsed=!this.isCollapsed, 100);
-
-    }
+  
 
     if (this.titleIn === 'out') {//titulo y pagina
     
-      setTimeout( () => {
+      let timer= setTimeout( () => {
         this.titleIn = 'in';
         this.showComponent.emit('in');
 

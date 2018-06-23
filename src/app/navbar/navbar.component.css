@@ -11,39 +11,95 @@ header{
 .opcion{ color: #eee !important; }
 
 .opcionAct{
-    transition: all 0.5s ease;
+    transition: text-shadow 0.5s ease;
     color: #eee !important;
     text-shadow: 2px 3px black;
 
 }
 
-.btnMenu {
-	top: 2%;     			position: fixed;  			 right: 5%; 	
-	display: flex;			z-index: 200;				flex-flow: column wrap;
-	text-align:center ;		
-       
+
+/*################################333*/
+/*################################333*/
+/*#######Animacion Boton  Nav ####333*/
+/*#################3###############33*/
+/*#################3###############33*/
+
+
+
+@keyframes play60 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -12000px 0px;
+  }
+}
+@keyframes play60new {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -12000px 0px;
+  }
+}
+.shapeshifter {
+  animation-duration: 1000ms;
+  animation-timing-function: steps(60,end);
+  width: 200px;
+  height: 120px;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: -20px;
+  right: calc(-84px + 5%);
+  z-index: 200;
+  transform: scale(0.5);
+}
+.shapeshifter.playB{
+  animation-name: play60;
+   -webkit-animation-fill-mode: forwards;
+ -o-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;
 }
 
+.shapeshifter.playF{
+  animation-name: play60new;
+ -webkit-animation-fill-mode: forwards;
+ -o-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;
+  animation-direction: reverse;
+
+
+}
+
+
+
+
+
+
+/*#################333*/
+/*#################333*/
+/*#################333*/
+/*#################333*/
+/*#################333*/
+/*#################333*/
 
 
 .btnMenu button:focus { 	 outline: none !important; }
 
-.btnMenu button{
-	background: transparent;     border: transparent;  	  
+#contenedorBandera button{
+	background: transparent;     border: transparent; 
+	padding: 0;
+
 }
 
 .barsAndX{
 	font-size: 32px; position: absolute;     left: 0;
-    padding: 0; transition: all 0.8s linear; 
+    padding: 0;  
 }
 
 .aparecer{ opacity: 1 ; transform: scale(1);}
 .desaparecer{ opacity: 0 ; transform: scale(0);}
 
-.barsAndX svg {
-	padding: 8px;
-    box-sizing: content-box;
-}
 
 .flags{
 	margin: auto;
@@ -53,15 +109,18 @@ header{
 	display: grid;
 }
 
-#contenedorBarsAndX{
-	position: relative;
-	height: 50px;
+
+
+
+
+#contenedorBandera {
+	position: fixed;
+	right: 5%; 	
+	z-index: 200;			
 }
+#contenedorBandera { top: calc(2% + 50px) }
+#equis{ margin-left: 2px }
 
-
-#barra:active{
-
-}
 
 #logo{ width: 80px;    margin-top: 10px; }
 #home {
@@ -88,13 +147,16 @@ header{
 
 
 #barItemsMovil{
-	position: fixed;	background: linear-gradient(to top right,#6494a4, #50696e);
+	position: fixed;
+	background: linear-gradient(to top right,#6494a4, #50696e);
 	width: 100%;		height: 100%;
-	transition: 1s;		 top: 0;
-	z-index: 50;
+	top: 0;
+	z-index: 10;
+	
+}
 	
 
-}
+
 
 #barItemsMovil ul{
 	margin-top: auto;						margin-bottom: auto;
@@ -114,7 +176,6 @@ header{
 	#logo			{	width: 50px;     	}
 	#contenedorLogo	{	text-align:center;	}
 	#contenedorLogo img { margin-top: 16px }
-	.btnMenu { top:10px; right: 2px	}
 
  } 
 

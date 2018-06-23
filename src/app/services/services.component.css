@@ -1,0 +1,316 @@
+
+
+/*#######################################################3*/
+/*#######################################################3*/
+/*###################  HERO CSS  ########################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+
+#hero{
+ height: 100vh; width: 100%; 
+ background-color: gray;
+ 
+  }
+.heroSlide{
+	float: left;
+	height: 100vh;
+	position: relative;
+}
+
+#hero{
+		color: white;
+}
+
+#webDevelopment{
+	background-color: #57dbdb;
+	width: 30%;
+}
+
+#webDevelopment::after{
+	content: "";
+	z-index: 2;
+    border: 10px solid #57dbdb;
+    height: 100vh;
+    width: 100px;
+    position: absolute;
+    background-color: #57dbdb;
+    transform: skewX(6deg);
+    left: 85%;
+    transition: all 2s ease;
+}
+
+#webDevelopment h2, #webDesign h2,
+#internetMarketing h2 {
+	font-weight: 300;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: inline-table;
+
+}
+#webDesign h2{
+	width: 70%
+}
+#webDevelopment button , #webDesign button ,
+#internetMarketing button{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: inline-table;
+	background-color: transparent;
+	border:2px solid white;
+	width: 44px;
+	height: 44px;
+	border-radius: 32px;
+}
+#webDevelopment button span, #webDesign span,
+#internetMarketing span {	border: .5px solid white; }
+
+#webDesign{
+	text-align: center;
+	width: 40%;
+	background: linear-gradient(270.35deg, #41D2C9 -2.09%, #2D9CDB 49.25%, #4161D2 99.75%);
+}
+
+#internetMarketing::before{
+	content: "";
+    border: 10px solid #4161D2;
+    height: 100vh;
+    width: 100px;
+    position: absolute;
+    background-color: #4161D2;
+    transform: skewX(6deg);
+    right: 85%;
+    transition: all 2s ease;
+}
+#internetMarketing{
+	width: 30%;
+	background-color: #4161D2;
+	text-align: center;
+}
+
+#hero{display: none} /*responsive mobile first*/
+
+
+/*#######################################################3*/
+/*#######################################################3*/
+/*###################  HERO SMALL CSS  ##################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+
+
+#heroSmall{ 
+	color: white;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(270.53deg, #41D2C9 -1.81%, #2D9CDB 49.18%, #4161D2 99.35%);
+}
+
+
+#heroSmall div{/*efecto drag and drop*/
+	height: 100vh;
+	width: 100%;
+	transition: all .5s ease;
+}
+#manita{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: calc(50% - 25px + 55px);
+	left: calc(50% - 25px + 5px);
+
+}
+#manita path{
+	display:inline;
+	fill:none;
+	stroke:#ffffff;
+	stroke-width:.8;
+	stroke-linecap:butt;
+	stroke-linejoin:miter;
+	stroke-miterlimit:4;
+	stroke-dasharray:none;
+	stroke-opacity:1
+}
+.drag{
+    background-color: rgba(0, 0, 0, 0.4588235294117647);
+}
+.invisible{opacity: 0;}
+.visible{opacity: 1;}
+.escalar{zoom:1.5;}
+.noEscalar{zoom:1;}
+
+#selector{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: inline-table;
+	background-color: transparent;
+	border:2px solid white;
+	width: 44px;
+	height: 44px;
+	border-radius: 44px;
+}
+#selector{
+	animation:onOff 1.5s ease infinite alternate ;
+	z-index: 2;
+	transition: all .5s ease;
+
+}
+@keyframes onOff{
+ 0% {opacity:1;}
+ 20% {opacity:.8;}
+ 40% {opacity:.6;}
+ 60% {opacity:.4;}
+ 80% {opacity:.2;}
+ 100% {opacity:.0;}
+}
+#selector:focus{
+	outline: none;
+}
+
+#instrucciones{
+	text-align: center;
+	position: absolute;
+	top: calc(50% + 50px + 55px );
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all .5s ease;
+	margin: 0;
+}
+
+#heroSmall span {	border: .5px solid white; }
+
+#heroSmall p:hover{
+	transition: all .5s ease;
+}
+
+#webTituloDesign{
+ 	position: absolute;
+	top: 30%;
+	transition: all .5s ease;
+}
+
+#webTituloDev{
+ 	position: absolute;
+	top: 60%;
+	left: 5%;
+	transition: all .5s ease;
+}
+
+#webTituloMarket{
+	width: 100px;
+	text-align: center;
+ 	position: absolute;
+	right: 5%;
+	transition: all .5s ease;
+}
+
+@media (max-width: 450px){
+
+}
+@media (min-width: 451px) and (max-width: 760px){}
+@media (min-width:761px) and (max-width: 1100px){}
+	 
+@media (min-width: 1101px){
+	#hero{display: block;}
+	#heroSmall{display: none;}
+}
+
+
+/*#######################################################3*/
+/*#######################################################3*/
+/*###############   Mainta animada#   ###################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+
+#manitaAnim{
+	
+	background-image: url("../../assets/img/services/manita_60fps.svg");		
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% + 30px);
+}
+
+@keyframes play60 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -6000px 0px;
+  }
+}
+.shapeshifter {
+  animation-duration: 3000ms;
+  animation-timing-function: steps(60);
+  width: 100px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.shapeshifter.play {
+  animation-name: play60;
+  animation-iteration-count: infinite;
+}
+
+/*#######################################################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+
+
+
+/*#######################################################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+
+
+
+
+/*#######################################################3*/
+/*#######################################################3*/
+/*###################  Content CSS  #####################3*/
+/*#######################################################3*/
+/*#######################################################3*/
+
+#webDesView{
+	z-index: 3;
+	height: 100vh;
+	background-color: gray;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	transform: translateY(100%);
+
+}
+
+#webDesView button{
+
+}
+
+#webDevView{
+	z-index: 3;
+	height: 100vh;
+	background-color: blue;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	transform: translateX(-100%);
+
+}
+
+
+#webMarkView{
+	z-index: 3;
+	height: 100vh;
+	background-color: yellow;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	transform: translateX(100%);
+
+}
