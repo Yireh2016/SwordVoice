@@ -4,32 +4,9 @@
 
 <main [@fade]="titleIn">
 
-<!-- Hero para PC -->
-
-
-	<div id="hero">
-		<div id="webDevelopment" class="heroSlide">
-			<h2>Web Development</h2>
-			<button title="service" (click)="flyfromLeft='on' " type="button"><span></span></button>
-		</div>
-		<div id="webDesign" class="heroSlide">
-			<h2>Web Design</h2>
-			<button title="service" (click)="flyfromBottom='on' " type="button"><span></span></button>
-		</div>
-		<div id="internetMarketing" class="heroSlide">
-			<h2>Social Media & Internet Marketing</h2>
-			<button title="service" (click)="flyfromRight='on' " type="button"><span></span></button>
-		</div>
-		
-	</div>
 
 <!-- Hero para Mobile -->
 	<div id="heroSmall" #contenedorSelector>
-
-
-		
-
-
 
 			<div [ngClass]="aparecer ? 'drag' : '' ">
 				<button id="selector"  #selector
@@ -43,15 +20,10 @@
 				 		<span></span>
 				 </button>
 
-			<section [style.display]="manitaView" id="manitaAnim" class="shapeshifter play"></section>
+			<figure [style.display]="manitaView" id="manitaAnim" class="shapeshifter play"></figure>
 
-
-
-
-
-
-								
-
+			<h2 id="instrucciones"
+			[style.visibility] = "!aparecer ? 'visible' : 'hidden' ">Swipe & Select</h2>
 				<p id="webTituloDesign" 
 				[style.transform]="webTituloDesignScale"
 				[style.left]="webTituloDesignLeft"
@@ -68,13 +40,94 @@
 				[style.transform]="webTituloMarketScale" 
 				[ngClass]="aparecer ? 'visible' : 'invisible' "
 				#webTituloMarket > Social Media & Internet Marketing</p>
-
-
-
 			</div>
 	</div>
 
+
+
+
+<!-- Hero para PC -->
+
+
+	<div id="hero">
+		<div id="webDevelopment" class="heroSlide">
+			<h2>Web Development</h2>
+			<div class="contBotonSelect">		
+			 <button 
+				class="botonSelect" 
+				title="Web Development" 
+				(click)="reveal('botonDevel') " 
+				type="button"
+				>
+				 <span #botonDevel></span>
+			 </button>
+			<p class="click">Click</p>
+		</div>
+		</div>
+		<div id="webDesign" class="heroSlide">
+			<h2>Web Design</h2>
+			<div class="contBotonSelect">
+				<button 
+				class="botonSelect" 
+				title="Web Design" 
+				(click)="reveal('botonDes')" type="button">
+					<span #botonDes></span>
+				</button>
+			<p class="click">Click</p>
+		</div>
+
+		</div>
+		<div id="internetMarketing" class="heroSlide">
+			<h2><span>Social Media</span><br> <span>&</span><br> <span>Internet Marketing</span></h2>
+			<div class="contBotonSelect">
+				<button 
+				class="botonSelect" 
+				title="Internet Marketing" 
+				(click)="reveal('botonMark') " type="button">
+					<span #botonMark></span>
+				</button>
+			<p class="click">Click</p>
+		</div>
+		</div>
+		
+	</div>
+
+
 <!--  content -->
+
+
+<!--
+ /*##################################*/
+/*##################################*/
+/*##################################*/
+/*# seccion donde estan los componente #*/
+/*#     a revelar con animacion     #*/
+/*##################################*/
+/*##################################*/
+/*##################################*/
+ -->
+
+  <section id="develSection"   #develSection>
+		<app-development  
+		*ngIf="develComponent" 
+		(finishMe)="unreveal(event)"></app-development>
+
+		 
+		<app-desing 
+		*ngIf="designComponent" 
+		(finishMe2)="unreveal(event)"></app-desing>
+		 
+
+
+		<app-marketing  
+		*ngIf="marketComponent" 
+		(finishMe3)="unreveal(event)"></app-marketing>
+
+  </section>
+
+
+
+
 	<div id="webDesView" [@flyBottom]='flyfromBottom'>
 
 		<button (click)="back()" type="button">back</button>
@@ -93,6 +146,9 @@
 		
 	</div>
 
+  <div id="animado" #animado>
+  	
+  </div>
 
 
 

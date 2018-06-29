@@ -1,5 +1,4 @@
 
-
 /*#######################################################3*/
 /*#######################################################3*/
 /*###################  HERO CSS  ########################3*/
@@ -47,26 +46,56 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 	display: inline-table;
+	text-align: center;
+	margin-bottom: 5px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .28);
 
+	
 }
 #webDesign h2{
 	width: 70%
 }
-#webDevelopment button , #webDesign button ,
-#internetMarketing button{
+
+.contBotonSelect{
 	position: absolute;
 	top: 80%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+
+}
+.botonSelect{
+	position: relative;
 	display: inline-table;
 	background-color: transparent;
-	border:2px solid white;
+	border:1px solid white;
 	width: 44px;
 	height: 44px;
-	border-radius: 32px;
+	border-radius: 100%;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.28);
+
+
 }
-#webDevelopment button span, #webDesign span,
-#internetMarketing span {	border: .5px solid white; }
+.contBotonSelect span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+
+
+.click{
+	text-align: center;
+}
+
+
+
+
+
 
 #webDesign{
 	text-align: center;
@@ -89,6 +118,10 @@
 	width: 30%;
 	background-color: #4161D2;
 	text-align: center;
+}
+
+.click{
+
 }
 
 #hero{display: none} /*responsive mobile first*/
@@ -149,24 +182,21 @@
 	transform: translate(-50%,-50%);
 	display: inline-table;
 	background-color: transparent;
-	border:2px solid white;
+	border: 1px solid #b3d9e0;
 	width: 44px;
 	height: 44px;
 	border-radius: 44px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.28);
 }
 #selector{
-	animation:onOff 1.5s ease infinite alternate ;
+	/*animation:onOff 2s ease infinite alternate ;*/
 	z-index: 2;
 	transition: all .5s ease;
 
 }
 @keyframes onOff{
- 0% {opacity:1;}
- 20% {opacity:.8;}
- 40% {opacity:.6;}
- 60% {opacity:.4;}
- 80% {opacity:.2;}
- 100% {opacity:.0;}
+ from {opacity:1;}
+ to {opacity:0;}
 }
 #selector:focus{
 	outline: none;
@@ -175,14 +205,32 @@
 #instrucciones{
 	text-align: center;
 	position: absolute;
-	top: calc(50% + 50px + 55px );
+	top: 20%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	transition: all .5s ease;
+	/*transition: all .5s ease;*/
 	margin: 0;
+	/*animation:offOn 2s ease infinite alternate ;*/
+	opacity:1;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
-#heroSmall span {	border: .5px solid white; }
+@keyframes offOn{
+ from {opacity:0;}
+ to {opacity:1;}
+}
+
+#heroSmall button span{	
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 2px);
+    transform: translate(-50%,-50%) rotate(-45deg);
+} 
 
 #heroSmall p:hover{
 	transition: all .5s ease;
@@ -244,7 +292,7 @@
   }
 }
 .shapeshifter {
-  animation-duration: 3000ms;
+  animation-duration: 2000ms;
   animation-timing-function: steps(60);
   width: 100px;
   height: 50px;
@@ -262,13 +310,6 @@
 
 
 
-/*#######################################################3*/
-/*#######################################################3*/
-/*#######################################################3*/
-/*#######################################################3*/
-/*#######################################################3*/
-
-
 
 
 /*#######################################################3*/
@@ -276,6 +317,19 @@
 /*###################  Content CSS  #####################3*/
 /*#######################################################3*/
 /*#######################################################3*/
+
+
+.revealContainer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*z-index: -1;*/
+	height:100%; 
+	width:100%;
+	z-index: 40;
+
+}
+
 
 #webDesView{
 	z-index: 3;
@@ -288,9 +342,7 @@
 
 }
 
-#webDesView button{
 
-}
 
 #webDevView{
 	z-index: 3;

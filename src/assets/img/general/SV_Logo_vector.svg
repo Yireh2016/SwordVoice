@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="SWnew_sin marco.svg">
+   sodipodi:docname="SV_Logo_vector.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -62,10 +62,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="54.290312"
-     inkscape:cy="102.81444"
+     inkscape:cx="-229.07081"
+     inkscape:cy="183.86687"
      inkscape:document-units="mm"
-     inkscape:current-layer="g905"
+     inkscape:current-layer="layer1"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -74,7 +74,7 @@
      inkscape:window-width="1366"
      inkscape:window-height="715"
      inkscape:window-x="-8"
-     inkscape:window-y="22"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -92,7 +92,9 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-30.744868,-49.039953)">
+     transform="translate(-30.744868,-49.039953)"
+     style="display:inline;opacity:1"
+     sodipodi:insensitive="true">
     <g
        id="g905">
       <g
@@ -114,39 +116,19 @@
            id="path859"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="ccccccc" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.77642059px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#415d68;fill-opacity:1;stroke:none;stroke-width:1.29441035"
-           x="43.078087"
-           y="-26.686222"
-           id="text836-4"><tspan
-             sodipodi:role="line"
-             id="tspan834-5"
-             x="43.078087"
-             y="20.320276"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:#415d68;fill-opacity:1;stroke-width:1.29441035" /><tspan
-             sodipodi:role="line"
-             x="43.078087"
-             y="85.040802"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.77639389px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#415d68;fill-opacity:1;stroke-width:1.29441035"
-             id="tspan838-8">s</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.77641678px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ecf0f2;fill-opacity:1;stroke:none;stroke-width:1.29441035"
-           x="42.817772"
-           y="-27.764242"
-           id="text836"><tspan
-             sodipodi:role="line"
-             id="tspan834"
-             x="42.817772"
-             y="19.242252"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:#ecf0f2;fill-opacity:1;stroke-width:1.29441035" /><tspan
-             sodipodi:role="line"
-             x="42.817772"
-             y="83.962776"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.77639389px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ecf0f2;fill-opacity:1;stroke-width:1.29441035"
-             id="tspan838">s</tspan></text>
       </g>
     </g>
+    <path
+       style="display:inline;opacity:1;fill:#415d68;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 59.627805,65.682734 C 57.47914,63.732403 56.5194,63.260329 55.151042,63.093561 c -0.917832,-0.149319 -2.342609,-0.04194 -2.994979,1.210213 -0.977316,1.875847 2.183349,2.999401 2.921211,3.372964 1.703649,0.862519 4.275152,2.177663 5.602905,3.167639 1.539541,1.147886 2.63728,2.072123 3.346524,4.151224 0.742379,2.176234 1.00569,3.850363 -0.06398,6.335524 -2.271585,5.27755 -9.136441,6.50828 -14.190482,4.81443 -2.400174,-1.0655 -3.813171,-2.19352 -5.479025,-4.10927 l 4.355658,-4.696006 c 0.663208,0.793666 6.106311,5.348616 8.806016,1.968157 2.539248,-3.17954 -5.222147,-5.029611 -8.88244,-8.010048 -2.264462,-2.031297 -3.182219,-4.161434 -3.176812,-6.57098 0.0045,-1.999975 0.857917,-4.085746 2.741838,-5.677666 1.17237,-0.990658 2.303914,-2.023005 6.178126,-2.330764 1.039947,-0.08261 3.130113,0.06177 5.536031,1.217592 2.699739,1.29697 3.453834,2.652406 4.11095,3.494907 -0.49955,0.554629 -3.423682,3.440741 -4.334778,4.251257 z"
+       id="path837-7-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccssssscccscssssccc" />
+    <path
+       style="display:inline;opacity:1;fill:#ecf0f2;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 58.93579,64.784895 c -2.148665,-1.950331 -3.108405,-2.422405 -4.476763,-2.589173 -0.917832,-0.149319 -2.342609,-0.04194 -2.994979,1.210213 -0.977316,1.875847 2.183349,2.999401 2.921211,3.372964 1.703649,0.862519 4.275152,2.177663 5.602905,3.167639 1.539541,1.147886 2.63728,2.072123 3.346524,4.151224 0.742379,2.176234 1.00569,3.850363 -0.06398,6.335523 -2.271585,5.27755 -9.136441,6.50828 -14.190482,4.81443 -2.400174,-1.0655 -3.813171,-2.19352 -5.479025,-4.10927 l 4.355658,-4.696005 c 0.663208,0.793666 6.106311,5.348615 8.806016,1.968157 2.539248,-3.17954 -5.222147,-5.029611 -8.88244,-8.010048 -2.264462,-2.031297 -3.182219,-4.161434 -3.176812,-6.57098 0.0045,-1.999975 0.857917,-4.085746 2.741838,-5.677666 1.17237,-0.990658 2.303914,-2.023005 6.178126,-2.330764 1.039947,-0.08261 3.130113,0.06177 5.536031,1.217592 2.699739,1.29697 3.453834,2.652406 4.11095,3.494907 -0.49955,0.554629 -3.423682,3.440741 -4.334778,4.251257 z"
+       id="path837-74"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccssssscccscssssccc" />
   </g>
 </svg>

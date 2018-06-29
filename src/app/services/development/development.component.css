@@ -1,0 +1,16 @@
+#developContainer{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+#developContainer h2{
+	color: white;
+	background-color: blue;
+}
+
+#developContainer button{
+	height: 20px;
+}

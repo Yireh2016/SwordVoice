@@ -1,0 +1,19 @@
+#marketContainer{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+
+
+}
+#marketContainer h2{
+	color: white;
+
+	background-color: blue;
+}
+
+#marketContainer button{
+	height: 20px;
+}

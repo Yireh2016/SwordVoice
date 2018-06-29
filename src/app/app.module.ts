@@ -22,6 +22,10 @@ import { BlogComponent } from './blog/blog.component';
 import { SlideComponent } from './home/slide/slide.component';
 import { FooterComponent } from './footer/footer.component';
 import { BarxComponent } from './navbar/barx/barx.component';
+import { DevelopmentComponent } from './services/development/development.component';
+import { DesingComponent } from './services/desing/desing.component';
+import { MarketingComponent } from './services/marketing/marketing.component';
+import { CardComponent } from './services/card/card.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -42,7 +46,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     OrgComponent,
     BlogComponent,
-    FooterComponent
+    FooterComponent,
+    DevelopmentComponent,
+    DesingComponent,
+    MarketingComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),

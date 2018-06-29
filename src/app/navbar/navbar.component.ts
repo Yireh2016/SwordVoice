@@ -18,26 +18,18 @@ trigger('flyInOut',[
       transition('out => in',[
 
 
-        animate('1000ms linear', 
+        animate('1000ms ease', 
          keyframes([
            style({transform:'translateX(100%)',offset:0}),
-           style({transform:'translateX(80%)',offset:0.2}),
-           style({transform:'translateX(60%)',offset:0.4}),
-           style({transform:'translateX(40%)',offset:0.6}),
-           style({transform:'translateX(20%)',offset:0.8}), 
            style({transform:'translateX(0)',offset:1}) 
 
            ]))//style({transform:'translateX(100%)'})
       ]),
      state('out', style({transform:'translateX(100%)'})),
       transition('in => out',[
-        animate('1000ms linear', 
+        animate('1000ms ease', 
           keyframes([
            style({transform:'translateX(0)',offset:0}),
-           style({transform:'translateX(20%)',offset:0.2}),
-           style({transform:'translateX(40%)',offset:0.4}),
-           style({transform:'translateX(60%)',offset:0.6}),
-           style({transform:'translateX(80%)',offset:0.8}), 
            style({transform:'translateX(100%)',offset:1}) 
 
            ]))
